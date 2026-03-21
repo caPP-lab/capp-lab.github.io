@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>caPP Lab @ Columbia University</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="./logo/fav/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./logo/fav/favicon.svg" />
+  <link rel="shortcut icon" href="/logo/fav/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/logo/fav/apple-touch-icon.png" />
+  <link rel="manifest" href="/logo/fav/site.webmanifest" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav" id="main-nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <img src="logo/logo-horizontal.png" alt="caPP Lab" />
+    </a>
+    <div class="nav-links" id="nav-links">
+      <a href="index.html" data-page="home" data-text="Home">Home</a>
+      <a href="research.html" data-page="research" data-text="Research">Research</a>
+      <!-- <a href="publications.html" data-page="publications">Publications</a> -->
+      <a href="team.html" data-page="team" data-text="Team">Team</a>
+      <a href="join.html" data-page="join" data-text="Join">Join</a>
+      <!-- <a href="teaching.html" data-page="teaching">Teaching</a> -->
+      <!-- <a href="outreach.html" data-page="outreach">Outreach</a> -->
+    </div>
+    <div class="nav-hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<div class="page-content">
+
+<div class="page" id="page-join">
+  <div class="page-hero">
+    <div class="container">
+      <h1>Join our lab</h1>
+      <p>Here's how to get involved.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="section-layout">
+        <div class="section-label"><h2>Express interest</h2></div>
+        <div>
+          <p>The caPP Lab at Columbia University always looking for motivated members who are interested in machine learning, online learning, reinforcement learning, and AI for biodiversity.</p>
+          <p><strong>If you're interested in research opportunities, please fill out <a href="https://forms.gle/fFc4DnTFp741yxHz9" target="_blank">this interest form</a>.</strong></p>
+          <p>The form will ask for a PDF of your resume/CV and transcripts, your interests, and any prior experience that may be relevant.</p>
+          <p>Your responses will help us learn more about your background and interests so we can match you with relevant opportunities and collaborations. Please note that there are not always opportunities available, and we may not be able to respond individually to every inquiry. However, when an opportunity to join a project does arise, we will first look through respondents on the interest form to identify potential candidates.</p>
+          <p>We look forward to hearing from you!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="section-layout">
+        <div class="section-label"><h2>Prospective PhD students</h2></div>
+        <div>
+          <p>If you're applying to Columbia for a PhD program, please mention Lily Xu as a faculty of interest in your PhD application. Feel free to send an email expressing your interest as well, but note that I am not always able to respond individually to every inquiry.</p> 
+          <p>Students with a strong background in applied math, optimization, or operations research can apply to <a href="https://ieor.columbia.edu/" target="_blank">Columbia IEOR</a>. Students with a background in computer science can apply to <a href="https://www.cs.columbia.edu/education/phd/" target="_blank">Columbia CS</a>. Students with a background in ecology, economics, or other disciplines can apply to <a href="https://e3b.columbia.edu/students/prospective/phd/" target="_blank">Columbia E3B</a> or the <a href="https://www.sipa.columbia.edu/sipa-education/phd-sustainable-development" target="_blank">Sustainable Development PhD</a> program at Columbia SIPA, where I may also be able to serve as a co-advisor.</p>
+          <p>No need to fill out the interest form unless you're interested in potentially working on projects beforehand.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+</div><!-- /page-content -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-logo"><img src="logo/logo.png" alt="caPP Lab" /></div>
+    <p>Computation and Algorithms for People and the Planet, with emphasis on <strong>People</strong> and the <strong>Planet</strong></p>
+    <!-- <p>&nbsp;·&nbsp; Columbia University</p> -->
+    <p style="margin-top:6px;">&copy; 2026 Lily Xu &nbsp;·&nbsp; <a href="#" onclick="window.scrollTo(0,0);return false;">Back to top ↑</a></p>
+  </div>
+</footer>
+
+<script>
+
+// ===== Nav: scroll shadow + logo hide on home hero =====
+function updateNavState() {
+  var nav = document.getElementById('main-nav');
+  nav.classList.toggle('scrolled', window.scrollY > 10);
+  var hero = document.getElementById('home-hero');
+  if (hero) {
+    var heroBottom = hero.getBoundingClientRect().bottom;
+    nav.classList.toggle('nav-logo-hidden', heroBottom > 70);
+  } else {
+    nav.classList.remove('nav-logo-hidden');
+  }
+}
+window.addEventListener('scroll', updateNavState, {passive: true});
+
+// ===== Mobile menu =====
+document.getElementById('hamburger').addEventListener('click', function() {
+  document.getElementById('nav-links').classList.toggle('open');
+});
+
+// ===== BibTeX toggle =====
+function showbib(id) {
+  var el = document.getElementById(id);
+  if (!el) return;
+  el.style.display = el.style.display === 'block' ? 'none' : 'block';
+}
+
+// ===== Publication tabs =====
+document.querySelectorAll('#pub-tabs .tab-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('#pub-tabs .tab-btn').forEach(function(b) { b.classList.remove('active'); });
+    btn.classList.add('active');
+    var area = btn.dataset.tab;
+    document.querySelectorAll('#pub-list .pub-item').forEach(function(item) {
+      item.style.display = (area === 'all' || item.dataset.area === area) ? 'block' : 'none';
+    });
+  });
+});
+
+// ===== Fade-in on page switch =====
+function fadeIn() {
+  var els = document.querySelectorAll('.pub-item, .news-list li, .team-card, .research-card, .teaching-item');
+  els.forEach(function(el, i) {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(12px)';
+    el.style.transition = 'opacity .35s ease ' + (i * 0.04) + 's, transform .35s ease ' + (i * 0.04) + 's';
+    requestAnimationFrame(function() {
+      requestAnimationFrame(function() {
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+      });
+    });
+  });
+}
+
+// ===== Init =====
+updateNavState();
+fadeIn();
+// Set active link in nav
+document.querySelectorAll('.nav-links a').forEach(a => {
+  const aFile = a.href.split('/').pop();
+  const pageFile = location.href.split('/').pop() || 'index.html';
+  if (aFile === pageFile) a.classList.add('active');
+});
+</script>
+</body>
+</html>

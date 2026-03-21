@@ -19,17 +19,17 @@
 
 <nav class="nav" id="main-nav">
   <div class="nav-inner">
-    <a class="nav-logo" href="#" onclick="showPage('home');return false;">
+    <a class="nav-logo" href="index.html">
       <img src="logo/logo-horizontal.png" alt="caPP Lab" />
     </a>
     <div class="nav-links" id="nav-links">
-      <a href="#" onclick="showPage('home');return false;" data-page="home" data-text="Home">Home</a>
-      <a href="#" onclick="showPage('research');return false;" data-page="research" data-text="Research">Research</a>
-      <!-- <a href="#" onclick="showPage('publications');return false;" data-page="publications">Publications</a> -->
-      <a href="#" onclick="showPage('team');return false;" data-page="team" data-text="Team">Team</a>
-      <a href="#" onclick="showPage('join');return false;" data-page="join" data-text="Join">Join</a>
-      <!-- <a href="#" onclick="showPage('teaching');return false;" data-page="teaching">Teaching</a> -->
-      <!-- <a href="#" onclick="showPage('outreach');return false;" data-page="outreach">Outreach</a> -->
+      <a href="index.html" data-page="home" data-text="Home">Home</a>
+      <a href="research.html" data-page="research" data-text="Research">Research</a>
+      <!-- <a href="publications.html" data-page="publications">Publications</a> -->
+      <a href="team.html" data-page="team" data-text="Team">Team</a>
+      <a href="join.html" data-page="join" data-text="Join">Join</a>
+      <!-- <a href="teaching.html" data-page="teaching">Teaching</a> -->
+      <!-- <a href="outreach.html" data-page="outreach">Outreach</a> -->
     </div>
     <div class="nav-hamburger" id="hamburger">
       <span></span><span></span><span></span>
@@ -39,9 +39,7 @@
 
 <div class="page-content">
 
-<!-- ===== HOME ===== -->
-<div class="page active" id="page-home">
-  <header class="hero" id="home-hero">
+<header class="hero" id="home-hero">
     <div class="container">
       <div class="hero-logo-wrap">
         <img src="logo/logo.png" alt="caPP Lab — Computation and Algorithms for People and the Planet" />
@@ -49,13 +47,13 @@
 <!--      <p class="hero-tagline">AI for decision making for planetary health</p>-->
      <!-- <p class="hero-tagline"></p> -->
       <p class="hero-desc">Advancing computation and algorithms to sustain people and the planet, with emphasis on <strong>people</strong> and the <strong>planet</strong>.</p>
-      <p class="hero-desc">Led by <a href="https://lily-x.github.io/" target="_blank">Prof. Lily Xu</a>, our research group at <strong>Columbia University</strong> develops AI methods across <strong>machine learning</strong>, <strong>optimization</strong>, and <strong>causal inference</strong> to tackle planetary health challenges, from biodiversity conservation to public health and disaster relief. Our work bridges rigorous theory with real-world deployment in partnership with NGOs, industry, and international organizations.
+      <p class="hero-desc">Led by <a href="https://lily-x.github.io/" target="_blank">Prof. Lily Xu</a>, our research group at <strong>Columbia University</strong> develops AI methods across machine learning, optimization, and causal inference to tackle planetary health challenges, from biodiversity conservation to public health and disaster relief. Our work bridges rigorous theory with real-world deployment in partnership with NGOs, industry, and international organizations.
       </p>
       <div class="hero-cta-row">
-        <button class="hero-cta primary" onclick="showPage('research')">Our research</button>
-        <!-- <button class="hero-cta secondary" onclick="showPage('publications')">Publications</button> -->
-        <button class="hero-cta secondary" onclick="showPage('team')">Meet the team</button>
-        <button class="hero-cta secondary" onclick="showPage('join')">Join</button>
+        <a class="hero-cta primary" href="research.html">Our research</a>
+        <!-- <a class="hero-cta secondary" href="publications.html">Publications</a> -->
+        <a class="hero-cta secondary" href="team.html">Meet the team</a>
+        <a class="hero-cta secondary" href="join.html">Join</a>
       </div>
     </div>
   </header>
@@ -145,405 +143,26 @@
   </section>
 </div>
 
-<!-- ===== RESEARCH ===== -->
-<div class="page" id="page-research">
-  <div class="page-hero">
-    <div class="container">
-      <h1>Research</h1>
-      <p>We develop AI methods that create real-world impact for people and the planet.</p>
-    </div>
-  </div>
-  <!-- <section class="section">
-    <div class="container">
-      <div class="highlight-box">
-        Our research overview
-      </div>
-      </div>
-    </section> -->
-
-  <section class="section">
-    <div class="container">
-      <div class="section-layout">
-        <div class="section-label"><h2>Topics</h2></div>
-        <div>
-        <p>Our research sits at the intersection of machine learning, optimization, and causal inference, developing new methodology inspired by practical problems in planetary health.</p>
-        <ul>
-          <li>Sequential decision making: multi-armed bandits, reinforcement learning, robust planning, game theory</li>
-          <li>Machine learning: ML + causality; ML + optimization; data science; learning in sparse, noisy settings</li>
-          <li>AI for social impact: AI for conservation, bridging research and practice, community building</li>
-          <li>Environmental conservation: nature financing, protected area management, ranger-based monitoring</li>
-        </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container">
-      <div class="research-grid" style="margin-top:36px;">
-        <div class="research-card"><div class="research-card-header"><div class="research-icon">🐍</div><h3>Invasive species management</h3></div><p>Coordinating agents to effectively respond to invasive animals.</p></div>
-        <div class="research-card"><div class="research-card-header"><div class="research-icon">⛑️</div><h3>Disaster relief</h3></div><p>Equitable and robust resource allocation for sudden-onset disasters, such as earthquakes in Turkey.</p></div>
-        <div class="research-card"><div class="research-card-header"><div class="research-icon">🌱</div><h3>Optimal monitoring for biodiversity credits</h3></div><p>Efficient data collection for ecological monitoring to increase the scale and viability of biodiversity credit programs.</p></div>
-        <div class="research-card"><div class="research-card-header"><div class="research-icon">🦁</div><h3>Wildlife conservation</h3></div><p>Predictive models and patrol planning algorithms (across online learning and robust reinforcement learning) for anti-poaching to enable more effective protected area management.</p></div>
-        <div class="research-card"><div class="research-card-header"><div class="research-icon">🤱</div><h3>Maternal health</h3></div><p>Algorithms for restless multi-armed bandit problems in resource-constrained settings public health settings where limited interventions must be allocated across many beneficiaries over time.</p></div>
-        <!-- <div class="research-card"><div class="research-icon">🎰</div><h3>Restless bandits</h3><p>Algorithms for restless multi-armed bandit problems in resource-constrained settings — from ranger patrol planning to maternal health — where limited interventions must be allocated across many beneficiaries over time.</p></div> -->
-        <!-- <div class="research-card"><div class="research-icon">🔗</div><h3>Causal Inference for Conservation</h3><p>Causal methods to evaluate conservation interventions from observational data, enabling rigorous evidence-based policy under the confounding challenges in ecological and social systems.</p></div> -->
-        <!-- <div class="research-card"><div class="research-icon">🌍</div><h3>Participatory AI &amp; data justice</h3><p>Designing AI systems that incorporate local knowledge, support contestability, and respect community rights in natural resource management and conservation decision-making.</p></div> -->
-      </div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container">
-      <div class="section-layout">
-        <div class="section-label"><h2>Partnerships</h2></div>
-        <div>
-          <p>We bridge research and practice through collaboration with NGOs, governments, and international organizations.</p>
-          <ul style="margin-top:16px;display:flex;flex-direction:column;gap:14px;">
-            <li style="display:flex;gap:14px;align-items:start;"><span style="font-size:1.4rem;flex-shrink:0;">🐘</span><div><strong><a href="https://smartconservationtools.org/" target="_blank">SMART Partnership</a></strong>, now known as SERCA<br><span style="font-size:.9rem;color:var(--text-light);">Building computational solutions for effective conservation management across protected areas worldwide.</span></div></li>
-            <li style="display:flex;gap:14px;align-items:start;"><span style="font-size:1.4rem;flex-shrink:0;">🐍</span><div><strong><a href="https://inversa.com/" target="_blank">INVERSA</a></strong><br><span style="font-size:.9rem;color:var(--text-light);">Harnessing market forces to protect threatened species by creating value from invasive animals.</span></div></li>
-            <li style="display:flex;gap:14px;align-items:start;"><span style="font-size:1.4rem;flex-shrink:0;">🐦</span><div><strong><a href="https://www.naturalstate.org/" target="_blank">Natural State</a></strong><br><span style="font-size:.9rem;color:var(--text-light);">Pioneering novel financial mechanisms, capacity building, and impact monitoring to catalyze funding for large-scale landscape restoration and conservation.</span></div></li>
-            <li style="display:flex;gap:14px;align-items:start;"><span style="font-size:1.4rem;flex-shrink:0;">🤱</span><div><strong><a href="https://armman.org/" target="_blank">ARMMAN</a></strong><br><span style="font-size:.9rem;color:var(--text-light);">Leveraging mobile health (mHealth) technology to create cost-effective, scalable, gender transformative, non-linear, systemic solutions to reduce maternal and child mortality and morbidity in India.</span></div></li>
-            <!-- <li style="display:flex;gap:14px;align-items:start;"><span style="font-size:1.4rem;flex-shrink:0;">🔬</span><div><strong><a href="https://www.eaamo.org/" target="_blank">EAAMO Research Initiative</a></strong> — Co-Director<br><span style="font-size:.9rem;color:var(--text-light);">Equity and Access in Algorithms, Mechanisms, and Optimization — connecting research to practice.</span></div></li> -->
-            <!-- <li style="display:flex;gap:14px;align-items:start;"><span style="font-size:1.4rem;flex-shrink:0;">🌐</span><div><strong><a href="https://www.naturerecovery.ox.ac.uk/" target="_blank">Leverhulme Centre for Nature Recovery</a></strong> — Oxford<br><span style="font-size:.9rem;color:var(--text-light);">Postdoctoral research on algorithmic decision-making and participation for biodiversity conservation.</span></div></li> -->
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ===== PUBLICATIONS ===== -->
-<div class="page" id="page-publications">
-  <div class="page-hero">
-    <div class="container">
-      <h1>Publications</h1>
-      <p>* indicates equal contribution.</p>
-    </div>
-  </div>
-  <section class="section">
-    <div class="container">
-      <div class="tab-nav" id="pub-tabs">
-        <button class="tab-btn active" data-tab="all">All</button>
-        <button class="tab-btn" data-tab="conservation">Conservation</button>
-        <button class="tab-btn" data-tab="bandits">Bandits &amp; RL</button>
-        <button class="tab-btn" data-tab="equity">Equity &amp; Access</button>
-        <button class="tab-btn" data-tab="causal">Causal</button>
-      </div>
-      <div id="pub-list">
-        <div class="pub-item" data-area="conservation">
-          <p class="pub-title">Generative AI Against Poaching: Latent Composite Flow Matching for Wildlife Conservation</p>
-          <p class="pub-authors">Lingkai Kong, Haichuan Wang, Charles A. Emogor, Vincent Börsch-Supan, Lily Xu, Milind Tambe</p>
-          <span class="pub-venue">IAAI 2026</span>
-          <div class="pub-links">
-            <a class="pub-link paper" href="https://arxiv.org/pdf/2508.14342" target="_blank">paper</a>
-            <button class="pub-link bib" onclick="showbib('bib-generative2026')">bib</button>
-          </div>
-          <pre id="bib-generative2026" class="bib-block">@inproceedings{kong2026generative,
-  title={Generative AI Against Poaching},
-  author={Kong, Lingkai and Wang, Haichuan and Emogor, Charles A. and Xu, Lily and Tambe, Milind},
-  booktitle={IAAI-26}, year={2026}
-}</pre>
-        </div>
-        <div class="pub-item" data-area="equity">
-          <p class="pub-title">From Maps to Models: Participation and Contestability in the Dynamic Management of Natural Resources</p>
-          <p class="pub-authors">Caleb Scoville, Razvan Amironesei, Lily Xu, Melissa Chapman, Nicholas R. Record, Carl Boettiger</p>
-          <span class="pub-venue">Geo 2025</span>
-          <div class="pub-links"><a class="pub-link paper" href="https://doi.org/10.1002/geo2.70028" target="_blank">paper</a></div>
-        </div>
-        <div class="pub-item" data-area="bandits">
-          <p class="pub-title">Reinforcement Learning with Combinatorial Actions for Coupled Restless Bandits</p>
-          <p class="pub-authors">Lily Xu et al.</p>
-          <span class="pub-venue">ICLR 2025</span>
-          <div class="pub-links">
-            <a class="pub-link paper" href="https://arxiv.org/abs/2503.01919" target="_blank">paper</a>
-            <a class="pub-link code" href="https://github.com/lily-x/combinatorial-rmab" target="_blank">code</a>
-          </div>
-        </div>
-        <div class="pub-item" data-area="causal">
-          <p class="pub-title">Counterfactual Conservation: A Causal Approach to Measuring the Impact of Protected Areas</p>
-          <p class="pub-authors">Lily Xu, Ronan Arthur, Milind Tambe, Alex Teytelboym</p>
-          <span class="pub-venue">NeurIPS 2024</span>
-          <div class="pub-links"><a class="pub-link paper" href="#" target="_blank">paper</a></div>
-        </div>
-        <div class="pub-item" data-area="bandits">
-          <p class="pub-title">Scalable Decision-Focused Learning in Restless Multi-Armed Bandits with Application to Maternal and Child Health</p>
-          <p class="pub-authors">Kai Wang*, Shresth Verma*, Aditya Mate, Sanket Shah, Aparna Taneja, Lily Xu, Milind Tambe et al.</p>
-          <span class="pub-venue">AAAI 2023</span>
-          <div class="pub-links"><a class="pub-link paper" href="#" target="_blank">paper</a></div>
-        </div>
-        <div class="pub-item" data-area="conservation">
-          <p class="pub-title">Dual-Mandate Patrols: Gold-Standard vs. Collateral Objectives</p>
-          <p class="pub-authors">Lily Xu, Elizabeth Bondi, Fei Fang, Andrew Perrault, Kai Wang, Milind Tambe</p>
-          <span class="pub-venue">AAAI 2021</span>
-          <span class="tag">Best Paper Runner-Up</span>
-          <div class="pub-links"><a class="pub-link paper" href="#" target="_blank">paper</a></div>
-        </div>
-        <div class="pub-item" data-area="conservation">
-          <p class="pub-title">Stay Ahead of Poachers: Illegal Wildlife Poaching Prediction and Patrol Planning Under Uncertainty with Field Test Evaluations</p>
-          <p class="pub-authors">Lily Xu, Andrew Perrault, Fei Fang, Haifeng Chen, Milind Tambe</p>
-          <span class="pub-venue">ICDE 2020</span>
-          <div class="pub-links"><a class="pub-link paper" href="https://arxiv.org/abs/1903.06669" target="_blank">paper</a></div>
-        </div>
-        <div class="pub-item" data-area="bandits">
-          <p class="pub-title">Artificial Replay: A Meta-Algorithm for Harnessing Historical Data in Bandits</p>
-          <p class="pub-authors">(alphabetical) Siddhartha Banerjee, Sean R. Sinclair, Milind Tambe, Lily Xu, Christina Lee Yu</p>
-          <span class="pub-venue">working paper</span>
-          <div class="pub-links">
-            <a class="pub-link paper" href="https://arxiv.org/pdf/2210.00025.pdf" target="_blank">paper</a>
-            <a class="pub-link code" href="https://github.com/lily-x/artificial-replay" target="_blank">code</a>
-          </div>
-        </div>
-        <div class="pub-item" data-area="conservation">
-          <p class="pub-title">Reflections from the Workshop on AI-Assisted Decision Making for Conservation</p>
-          <p class="pub-authors">Lily Xu*, Esther Rolf*, Sara Beery, Joseph R. Bennett, Tanya Berger-Wolf, and 19 others</p>
-          <span class="pub-venue">white paper</span>
-          <div class="pub-links"><a class="pub-link paper" href="http://arxiv.org/pdf/2307.08774.pdf" target="_blank">paper</a></div>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ===== TEAM ===== -->
-<div class="page" id="page-team">
-  <div class="page-hero">
-    <div class="container">
-      <h1>Team</h1>
-      <p>The people advancing computation and algorithms for people and the planet. Our team's expertise spans operations research, computer science, and ecology.</p>
-    </div>
-  </div>
-  <section class="section">
-    <div class="container">
-      <p class="team-section-title">Principal Investigator</p>
-      <div class="pi-row">
-        <div class="pi-photo"><img src="img/headshots/LilyXu.jpg" alt="Lily Xu"></div>
-        <div>
-          <h2 class="pi-name">Lily Xu</h2>
-          <p class="pi-role">Sun-Wu Assistant Professor · Columbia University</p>
-          <!-- <br>IEOR &amp; Computer Science -->
-          <p style="font-size:.92rem;color:var(--slate);">Lily Xu is Sun-Wu Assistant Professor at Columbia University in the Department of Industrial Engineering and Operations Research (IEOR), with affiliations in Computer Science (CS) and Ecology, Evolution, and Environmental Biology (E3B). 
-            <!-- Her research develops AI methods across machine learning, optimization, and causal inference for planetary health challenges, with a focus on biodiversity conservation.  -->
-            Her work provides novel algorithms to enable practitioners to make effective decisions in the face of limited data, taking actions that are robust to uncertainty, effective at scale, and future-looking. Since 2020, she co-organizes the <a href="https://www.eaamo.org/" target="_blank">EAAMO research initiative</a>, committed to advancing Equity and Access in Algorithms, Mechanisms, and Optimization.</p>
-          <p style="font-size:.92rem;color:var(--slate);">Lily holds a PhD in computer science from Harvard University and was a postdoctoral research fellow at the University of Oxford with the Leverhulme Centre for Nature Recovery. Her research has been recognized with best paper runner-up at AAAI, the INFORMS Doing Good with Good OR award, a Google PhD Fellowship, a Siebel Scholarship, and AAMAS best dissertation runner-up.</p>
-          <div class="pi-links">
-            <a class="pi-link" href="https://lily-x.github.io/" target="_blank">website</a>
-            <a class="pi-link" href="https://lily-x.github.io/LilyXu-cv.pdf" target="_blank">CV</a>
-            <a class="pi-link" href="https://scholar.google.com/citations?user=ie3381cAAAAJ" target="_blank">Google Scholar</a>
-            <a class="pi-link" href="https://bsky.app/profile/lilyxu.bsky.social" target="_blank">BlueSky</a>
-            <a class="pi-link" href="https://www.twitter.com/lilyxu0" target="_blank">Twitter/X</a>
-            <a class="pi-link" href="https://www.linkedin.com/in/lilylxu" target="_blank">LinkedIn</a>
-          </div>
-        </div>
-      </div>
-      <p class="team-section-title">Lab members</p>
-      <div class="team-grid">
-        <div class="team-card"><div class="team-card-img placeholder">🐒</div><div class="team-card-body"><p class="team-card-name">Icey Siyi Ai</p><p class="team-card-role">Columbia IEOR · 1st year PhD student</p><p class="team-card-bio">Bio.</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🦒</div><div class="team-card-body"><p class="team-card-name">Anson Shyu</p><p class="team-card-role">Columbia IEOR · 1st year PhD student</p><p class="team-card-bio">Bio.</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🐈</div><div class="team-card-body"><p class="team-card-name">tahda queer</p><p class="team-card-role">Columbia IEOR · 1st year PhD student</p><p class="team-card-bio">Bio.</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🦋</div><div class="team-card-body"><p class="team-card-name"><a href="https://vihaanakshaay.github.io/" target="_blank">Vihaan Akshaay</a></p><p class="team-card-role">Data scientist @ industry · Advisee</p><p class="team-card-bio">Bio.</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🦁</div><div class="team-card-body"><p class="team-card-name"><a href="https://noahkrever.github.io/" target="_blank">Noah Krever</a></p><p class="team-card-role">Columbia CS alumni · RA</p><p class="team-card-bio">Bio.</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🐆</div><div class="team-card-body"><p class="team-card-name">Luveen Wadhwani</p><p class="team-card-role">Columbia E3B · 1st year MS</p><p class="team-card-bio">Bio.</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🦉</div><div class="team-card-body"><p class="team-card-name">Donovan Barcelona</p><p class="team-card-role">Columbia IEOR · Undergrad</p><p class="team-card-bio">Bio.</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🦩</div><div class="team-card-body"><p class="team-card-name">Hannah Park</p><p class="team-card-role">UChicago CS · Undergrad</p><p class="team-card-bio">Bio.</p></div></div>
-      </div>
-      <p class="team-section-title" style="margin-top:48px;">Alumni</p>
-      <div class="team-grid">
-        <div class="team-card"><div class="team-card-img placeholder">🎓</div><div class="team-card-body"><p class="team-card-name">Rachel Guo</p><p class="team-card-role">Harvard CS/stats · undergrad '22</p><p class="team-card-bio">Thesis '22, now PhD student @ Stanford ICME</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🎓</div><div class="team-card-body"><p class="team-card-name">Emilia Cabrera</p><p class="team-card-role">Harvard CS · undergrad '21</p><p class="team-card-bio">Thesis '21, now Duolingo</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🎓</div><div class="team-card-body"><p class="team-card-name">Ezenia Diaz-Lembert</p><p class="team-card-role">Harvard CS · undergrad '23</p><p class="team-card-bio">x</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🎓</div><div class="team-card-body"><p class="team-card-name">April Chen</p><p class="team-card-role">Harvard CS/gov · undergrad '22</p><p class="team-card-bio">Now OpenAI</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🎓</div><div class="team-card-body"><p class="team-card-name">Christopher Ong</p><p class="team-card-role">Harvard CS/econ · undergrad '23</p><p class="team-card-bio"></p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🎓</div><div class="team-card-body"><p class="team-card-name">Alejandra Perea Rojas</p><p class="team-card-role">Harvard CS · undergrad '24</p><p class="team-card-bio"></p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🎓</div><div class="team-card-body"><p class="team-card-name">Vincent Börsch-Supan</p><p class="team-card-role">Harvard CS/math · undergrad '25</p><p class="team-card-bio">Now data scientist @ QuantCo</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🎓</div><div class="team-card-body"><p class="team-card-name">Kyran Flynn</p><p class="team-card-role">Columbia IEOR · MS '25</p><p class="team-card-bio"></p></div></div>
-      </div>
-      <div class="highlight-box" style="margin-top:48px;">
-        <strong>Interested in joining the lab?</strong><br>
-        Tell us about your background and interest in the Join tab, linked above.
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ===== JOIN US ===== -->
-<div class="page" id="page-join">
-  <div class="page-hero">
-    <div class="container">
-      <h1>Join our lab</h1>
-      <p>Here's how to get involved.</p>
-    </div>
-  </div>
-  <section class="section">
-    <div class="container">
-      <div class="section-layout">
-        <div class="section-label"><h2>Express interest</h2></div>
-        <div>
-          <p>The caPP Lab at Columbia University always looking for motivated members who are interested in machine learning, online learning, reinforcement learning, and AI for biodiversity.</p>
-          <p><strong>If you're interested in research opportunities, please fill out <a href="https://forms.gle/fFc4DnTFp741yxHz9" target="_blank">this interest form</a>.</strong></p>
-          <p>The form will ask for a PDF of your resume/CV and transcripts, your interests, and any prior experience that may be relevant.</p>
-          <p>Your responses will help us learn more about your background and interests so we can match you with relevant opportunities and collaborations. Please note that there are not always opportunities available, and we may not be able to respond individually to every inquiry. However, when an opportunity to join a project does arise, we will first look through respondents on the interest form to identify potential candidates.</p>
-          <p>We look forward to hearing from you!</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container">
-      <div class="section-layout">
-        <div class="section-label"><h2>Prospective PhD students</h2></div>
-        <div>
-          <p>If you're applying to Columbia for a PhD program, please mention Lily Xu as a faculty of interest in your PhD application. Feel free to send an email expressing your interest as well, but note that I am not always able to respond individually to every inquiry.</p> 
-          <p>Students with a strong background in applied math, optimization, or operations research can apply to <a href="https://ieor.columbia.edu/" target="_blank">Columbia IEOR</a>. Students with a background in computer science can apply to <a href="https://www.cs.columbia.edu/education/phd/" target="_blank">Columbia CS</a>. Students with a background in ecology, economics, or other disciplines can apply to <a href="https://e3b.columbia.edu/students/prospective/phd/" target="_blank">Columbia E3B</a> or the <a href="https://www.sipa.columbia.edu/sipa-education/phd-sustainable-development" target="_blank">Sustainable Development PhD</a> program at Columbia SIPA, where I may also be able to serve as a co-advisor.</p>
-          <p>No need to fill out the interest form unless you're interested in potentially working on projects beforehand.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-
-<!-- ===== TEACHING ===== -->
-<!--
-<div class="page" id="page-teaching">
-  <div class="page-hero">
-    <div class="container">
-      <h1>Teaching</h1>
-      <p>Courses at Columbia and guest lectures on AI for social impact.</p>
-    </div>
-  </div>
-  <section class="section">
-    <div class="container">
-      <div class="section-layout">
-        <div class="section-label"><h2>Columbia Courses</h2></div>
-        <div>
-          <div class="teaching-item">
-            <div><p class="teaching-code">IEOR E8100</p><p style="font-size:.8rem;color:var(--text-light);">Spring 2026</p></div>
-            <div>
-              <p class="teaching-name"><a href="https://lily-x.github.io/teaching/IEOR8100/2026/index.html" target="_blank">Algorithmic Decision-Making for Social Good</a></p>
-              <p class="teaching-meta">Graduate seminar · Columbia IEOR</p>
-              <p style="font-size:.9rem;color:var(--slate);margin-top:6px;">Advanced seminar on how AI can be applied to create social good — resource allocation, fairness, causal inference, and mechanism design in the public sector.</p>
-            </div>
-          </div>
-          <div class="teaching-item">
-            <div><p class="teaching-code">ORCS E4200</p><p style="font-size:.8rem;color:var(--text-light);">Fall 2025</p></div>
-            <div>
-              <p class="teaching-name">Data-Driven Decision Modeling</p>
-              <p class="teaching-meta">Undergraduate &amp; master's · Columbia IEOR</p>
-              <p style="font-size:.9rem;color:var(--slate);margin-top:6px;">Optimization and decision modeling with real data — linear and integer programming, stochastic optimization, supply chain, healthcare, and sustainability applications.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container">
-      <div class="section-layout">
-        <div class="section-label"><h2>Guest Lectures</h2></div>
-        <div>
-          <ul class="news-list">
-            <li><span class="news-date">Spring 2025</span><span>USC, Wageningen University, UCL, Imperial College Business School, London Business School, Alliance Summer School (Paris)</span></li>
-            <li><span class="news-date">June 2024</span><span><a href="https://www.climatechange.ai/events/summer_school2024" target="_blank">Climate Change AI Summer School</a> — AI for Conservation Decisions. <a href="https://youtu.be/I9TIRncO9HE?si=yhWIYTo3FGpTWX3e&t=3809" target="_blank">Watch</a></span></li>
-            <li><span class="news-date">Apr 2024</span><span><a href="https://www.youtube.com/watch?v=DBk-EHzHJWA" target="_blank">Equitech Futures Applied AI Seminar</a> (50 min)</span></li>
-            <li><span class="news-date">2023</span><span>Harvard Kennedy School Executive Education, Cornell ORIE Young Researchers Workshop, Berkeley BIDS, Penn State CSRAI</span></li>
-            <li><span class="news-date">2022</span><span>MIT, Ohio State, Wellesley College, Georgia Tech, Universität Tübingen, Sony CSL Paris</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
--->
-
-<!-- ===== OUTREACH ===== -->
-<div class="page" id="page-outreach">
-  <div class="page-hero">
-    <div class="container">
-      <h1>Outreach</h1>
-      <p>Bridging AI research and practice through talks, media, and community engagement.</p>
-    </div>
-  </div>
-  <section class="section">
-    <div class="container">
-      <div class="section-layout">
-        <div class="section-label"><h2>Media Coverage</h2></div>
-        <div>
-          <ul class="news-list">
-            <li><span class="news-date">Mongabay</span><span><a href="https://news.mongabay.com/2020/11/where-to-patrol-next-netflix-of-ranger-ai-serves-up-poaching-predictions/" target="_blank">Where to patrol next: 'Netflix' of ranger AI serves up poaching predictions</a></span></li>
-            <li><span class="news-date">Harvard SEAS</span><span><a href="https://www.seas.harvard.edu/news/2020/06/preventing-poaching" target="_blank">Preventing poaching</a></span></li>
-            <li><span class="news-date">Engadget</span><span>Wildlife Rangers Armed with AI (SXSW 2021)</span></li>
-            <li><span class="news-date">Rethinking Economics NL</span><span><a href="https://www.youtube.com/watch?v=oPYZRs7IFUg" target="_blank">Podcast: Mechanism Design for Social Good</a></span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container">
-      <div class="section-layout">
-        <div class="section-label"><h2>Recorded Talks</h2></div>
-        <div>
-          <ul class="news-list">
-            <li><span class="news-date">Oct 2025</span><span><a href="https://www.youtube.com/live/X5NjPpkcqEQ" target="_blank">UN ITU AI for Good</a></span></li>
-            <li><span class="news-date">Jun 2025</span><span><a href="https://www.youtube.com/watch?v=a2B675quBHo" target="_blank">RISE Research Institutes of Sweden</a></span></li>
-            <li><span class="news-date">Feb 2025</span><span><a href="https://www.oii.ox.ac.uk/news-events/videos/algorithmic-decision-making-and-participation-for-biodiversity-conservation/" target="_blank">Oxford Internet Institute</a></span></li>
-            <li><span class="news-date">Jun 2024</span><span><a href="https://youtu.be/I9TIRncO9HE?si=yhWIYTo3FGpTWX3e&t=3809" target="_blank">Climate Change AI Summer School</a> (60 min)</span></li>
-            <li><span class="news-date">Apr 2023</span><span><a href="https://vimeo.com/817385079" target="_blank">WWF Fuller Seminar</a> on Causality for Conservation (59 min)</span></li>
-            <li><span class="news-date">May 2023</span><span><a href="https://www.youtube.com/watch?v=w4X_sm_Dznw" target="_blank">Berkeley Multi-Agent Learning Seminar</a> (50 min)</span></li>
-            <li><span class="news-date">Sep 2021</span><span><a href="https://www.youtube.com/watch?v=e44pWdvUwoc" target="_blank">WILDLABS Tech Tutors</a> — How do I use AI to fight wildlife crime? (1h 16min)</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container">
-      <div class="section-layout">
-        <div class="section-label"><h2>Awards</h2></div>
-        <div>
-          <ul class="news-list">
-            <li><span class="news-date">2024</span><span>Runner-up, <a href="https://www.ifaamas.org/award-victorlesser.html" target="_blank">IFAAMAS Victor Lesser Distinguished Dissertation Award</a></span></li>
-            <li><span class="news-date">2023</span><span>Rising Star in Management Science &amp; Engineering (Stanford), Data Science (UChicago), EECS (Georgia Tech)</span></li>
-            <li><span class="news-date">2021</span><span>Winner, INFORMS Doing Good with Good OR Student Paper Competition</span></li>
-            <li><span class="news-date">2021</span><span>Best Paper Runner-Up, AAAI 2021 — "Dual-Mandate Patrols"</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
-
 </div><!-- /page-content -->
 
 <footer class="footer">
   <div class="container">
     <div class="footer-logo"><img src="logo/logo.png" alt="caPP Lab" /></div>
-    <p>Computation and Algorithms for People and the Planet, with emphasis on People and the Planet</p>
+    <p>Computation and Algorithms for People and the Planet, with emphasis on <strong>People</strong> and the <strong>Planet</strong></p>
     <!-- <p>&nbsp;·&nbsp; Columbia University</p> -->
     <p style="margin-top:6px;">&copy; 2026 Lily Xu &nbsp;·&nbsp; <a href="#" onclick="window.scrollTo(0,0);return false;">Back to top ↑</a></p>
   </div>
 </footer>
 
 <script>
-// ===== SPA Router =====
-function showPage(name) {
-  document.querySelectorAll('.page').forEach(function(p) { p.classList.remove('active'); });
-  document.querySelectorAll('.nav-links a').forEach(function(a) { a.classList.remove('active'); });
-  var page = document.getElementById('page-' + name);
-  if (page) { page.classList.add('active'); window.scrollTo(0, 0); }
-  var link = document.querySelector('.nav-links a[data-page="' + name + '"]');
-  if (link) link.classList.add('active');
-  document.getElementById('nav-links').classList.remove('open');
-  updateNavState();
-  setTimeout(fadeIn, 50);
-}
 
 // ===== Nav: scroll shadow + logo hide on home hero =====
 function updateNavState() {
   var nav = document.getElementById('main-nav');
   nav.classList.toggle('scrolled', window.scrollY > 10);
-  var onHome = document.getElementById('page-home').classList.contains('active');
-  if (onHome) {
-    var hero = document.getElementById('home-hero');
-    var heroBottom = hero ? hero.getBoundingClientRect().bottom : 0;
+  var hero = document.getElementById('home-hero');
+  if (hero) {
+    var heroBottom = hero.getBoundingClientRect().bottom;
     nav.classList.toggle('nav-logo-hidden', heroBottom > 70);
   } else {
     nav.classList.remove('nav-logo-hidden');
@@ -577,7 +196,7 @@ document.querySelectorAll('#pub-tabs .tab-btn').forEach(function(btn) {
 
 // ===== Fade-in on page switch =====
 function fadeIn() {
-  var els = document.querySelectorAll('.page.active .pub-item, .page.active .news-list li, .page.active .team-card, .page.active .research-card, .page.active .teaching-item');
+  var els = document.querySelectorAll('.pub-item, .news-list li, .team-card, .research-card, .teaching-item');
   els.forEach(function(el, i) {
     el.style.opacity = '0';
     el.style.transform = 'translateY(12px)';
@@ -594,6 +213,12 @@ function fadeIn() {
 // ===== Init =====
 updateNavState();
 fadeIn();
+// Set active link in nav
+document.querySelectorAll('.nav-links a').forEach(a => {
+  const aFile = a.href.split('/').pop();
+  const pageFile = location.href.split('/').pop() || 'index.html';
+  if (aFile === pageFile) a.classList.add('active');
+});
 </script>
 </body>
 </html>
