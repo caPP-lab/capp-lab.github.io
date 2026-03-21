@@ -1,3 +1,9 @@
+<!---
+Hi! Welcome to my website. I have slowly and very intentionally curated the design of my webpage over many years. I ask that you please not copy the design of my website, especially not without permission. 
+
+Thanks so much for understanding,
+Lily --->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +19,9 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>caPP Lab @ Columbia University</title>
+  <meta name="description" content="Research areas of the caPP Lab at Columbia University.">
+
+  <title>Research — caPP Lab | Columbia University</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 
@@ -49,70 +57,69 @@
 
 <div class="page-content">
 
-<div class="page" id="page-research">
-  <div class="page-hero">
-    <div class="container">
-      <h1>Research</h1>
-      <p>We develop AI methods that create real-world impact for people and the planet.</p>
+
+<div class="page-hero">
+  <div class="container">
+    <h1>Research</h1>
+    <p>We develop AI methods that create real-world impact for people and the planet.</p>
+  </div>
+</div>
+<!-- <section class="section">
+  <div class="container">
+    <div class="highlight-box">
+      Our research overview
+    </div>
+    </div>
+  </section> -->
+
+<section class="section">
+  <div class="container">
+    <div class="section-layout">
+      <div class="section-label"><h2>Topics</h2></div>
+      <div>
+      <p>Our research sits at the intersection of machine learning, optimization, and causal inference, developing new methodology inspired by practical problems in planetary health.</p>
+      <ul>
+        <li>Sequential decision making: multi-armed bandits, reinforcement learning, robust planning, game theory</li>
+        <li>Machine learning: ML + causality; ML + optimization; data science; learning in sparse, noisy settings</li>
+        <li>AI for social impact: AI for conservation, bridging research and practice, community building</li>
+        <li>Environmental conservation: nature financing, protected area management, ranger-based monitoring</li>
+      </ul>
+      </div>
     </div>
   </div>
-  <!-- <section class="section">
-    <div class="container">
-      <div class="highlight-box">
-        Our research overview
-      </div>
-      </div>
-    </section> -->
-
-  <section class="section">
-    <div class="container">
-      <div class="section-layout">
-        <div class="section-label"><h2>Topics</h2></div>
-        <div>
-        <p>Our research sits at the intersection of machine learning, optimization, and causal inference, developing new methodology inspired by practical problems in planetary health.</p>
-        <ul>
-          <li>Sequential decision making: multi-armed bandits, reinforcement learning, robust planning, game theory</li>
-          <li>Machine learning: ML + causality; ML + optimization; data science; learning in sparse, noisy settings</li>
-          <li>AI for social impact: AI for conservation, bridging research and practice, community building</li>
-          <li>Environmental conservation: nature financing, protected area management, ranger-based monitoring</li>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="research-grid" style="margin-top:36px;">
+      <div class="research-card"><div class="research-card-header"><div class="research-icon">🐍</div><h3>Invasive species management</h3></div><p>Coordinating agents to effectively respond to invasive animals.</p></div>
+      <div class="research-card"><div class="research-card-header"><div class="research-icon">⛑️</div><h3>Disaster relief</h3></div><p>Equitable and robust resource allocation for sudden-onset disasters, such as earthquakes in Turkey.</p></div>
+      <div class="research-card"><div class="research-card-header"><div class="research-icon">🌱</div><h3>Optimal monitoring for biodiversity credits</h3></div><p>Efficient data collection for ecological monitoring to increase the scale and viability of biodiversity credit programs.</p></div>
+      <div class="research-card"><div class="research-card-header"><div class="research-icon">🦁</div><h3>Wildlife conservation</h3></div><p>Predictive models and patrol planning algorithms (across online learning and robust reinforcement learning) for anti-poaching to enable more effective protected area management.</p></div>
+      <div class="research-card"><div class="research-card-header"><div class="research-icon">🤱</div><h3>Maternal health</h3></div><p>Algorithms for restless multi-armed bandit problems in resource-constrained public health settings where limited interventions must be allocated across many beneficiaries over time.</p></div>
+      <!-- <div class="research-card"><div class="research-icon">🎰</div><h3>Restless bandits</h3><p>Algorithms for restless multi-armed bandit problems in resource-constrained settings — from ranger patrol planning to maternal health — where limited interventions must be allocated across many beneficiaries over time.</p></div> -->
+      <!-- <div class="research-card"><div class="research-icon">🔗</div><h3>Causal Inference for Conservation</h3><p>Causal methods to evaluate conservation interventions from observational data, enabling rigorous evidence-based policy under the confounding challenges in ecological and social systems.</p></div> -->
+      <!-- <div class="research-card"><div class="research-icon">🌍</div><h3>Participatory AI &amp; data justice</h3><p>Designing AI systems that incorporate local knowledge, support contestability, and respect community rights in natural resource management and conservation decision-making.</p></div> -->
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="section-layout">
+      <div class="section-label"><h2>Partnerships</h2></div>
+      <div>
+        <p>We bridge research and practice through collaboration with NGOs, governments, and intergovernmental organizations.</p>
+        <ul style="margin-top:16px;display:flex;flex-direction:column;gap:14px;">
+          <li style="display:flex;gap:14px;align-items:start;"><span style="font-size:1.4rem;flex-shrink:0;">🐘</span><div><strong><a href="https://smartconservationtools.org/" target="_blank">SMART Partnership</a></strong>, now known as SERCA<br><span style="font-size:.9rem;color:var(--text-light);">Building computational solutions for effective conservation management across protected areas worldwide.</span></div></li>
+          <li style="display:flex;gap:14px;align-items:start;"><span style="font-size:1.4rem;flex-shrink:0;">🐍</span><div><strong><a href="https://inversa.com/" target="_blank">INVERSA</a></strong><br><span style="font-size:.9rem;color:var(--text-light);">Harnessing market forces to protect threatened species by creating value from invasive animals.</span></div></li>
+          <li style="display:flex;gap:14px;align-items:start;"><span style="font-size:1.4rem;flex-shrink:0;">🐦</span><div><strong><a href="https://www.naturalstate.org/" target="_blank">Natural State</a></strong><br><span style="font-size:.9rem;color:var(--text-light);">Pioneering novel financial mechanisms, capacity building, and impact monitoring to catalyze funding for large-scale landscape restoration and conservation.</span></div></li>
+          <li style="display:flex;gap:14px;align-items:start;"><span style="font-size:1.4rem;flex-shrink:0;">🤱</span><div><strong><a href="https://armman.org/" target="_blank">ARMMAN</a></strong><br><span style="font-size:.9rem;color:var(--text-light);">Leveraging mobile health (mHealth) technology to create cost-effective, scalable, gender transformative, non-linear, systemic solutions to reduce maternal and child mortality and morbidity in India.</span></div></li>
+          <!-- <li style="display:flex;gap:14px;align-items:start;"><span style="font-size:1.4rem;flex-shrink:0;">🔬</span><div><strong><a href="https://www.eaamo.org/" target="_blank">EAAMO Research Initiative</a></strong> — Co-Director<br><span style="font-size:.9rem;color:var(--text-light);">Equity and Access in Algorithms, Mechanisms, and Optimization — connecting research to practice.</span></div></li> -->
+          <!-- <li style="display:flex;gap:14px;align-items:start;"><span style="font-size:1.4rem;flex-shrink:0;">🌐</span><div><strong><a href="https://www.naturerecovery.ox.ac.uk/" target="_blank">Leverhulme Centre for Nature Recovery</a></strong> — Oxford<br><span style="font-size:.9rem;color:var(--text-light);">Postdoctoral research on algorithmic decision-making and participation for biodiversity conservation.</span></div></li> -->
         </ul>
-        </div>
       </div>
     </div>
-  </section>
-  <section class="section">
-    <div class="container">
-      <div class="research-grid" style="margin-top:36px;">
-        <div class="research-card"><div class="research-card-header"><div class="research-icon">🐍</div><h3>Invasive species management</h3></div><p>Coordinating agents to effectively respond to invasive animals.</p></div>
-        <div class="research-card"><div class="research-card-header"><div class="research-icon">⛑️</div><h3>Disaster relief</h3></div><p>Equitable and robust resource allocation for sudden-onset disasters, such as earthquakes in Turkey.</p></div>
-        <div class="research-card"><div class="research-card-header"><div class="research-icon">🌱</div><h3>Optimal monitoring for biodiversity credits</h3></div><p>Efficient data collection for ecological monitoring to increase the scale and viability of biodiversity credit programs.</p></div>
-        <div class="research-card"><div class="research-card-header"><div class="research-icon">🦁</div><h3>Wildlife conservation</h3></div><p>Predictive models and patrol planning algorithms (across online learning and robust reinforcement learning) for anti-poaching to enable more effective protected area management.</p></div>
-        <div class="research-card"><div class="research-card-header"><div class="research-icon">🤱</div><h3>Maternal health</h3></div><p>Algorithms for restless multi-armed bandit problems in resource-constrained settings public health settings where limited interventions must be allocated across many beneficiaries over time.</p></div>
-        <!-- <div class="research-card"><div class="research-icon">🎰</div><h3>Restless bandits</h3><p>Algorithms for restless multi-armed bandit problems in resource-constrained settings — from ranger patrol planning to maternal health — where limited interventions must be allocated across many beneficiaries over time.</p></div> -->
-        <!-- <div class="research-card"><div class="research-icon">🔗</div><h3>Causal Inference for Conservation</h3><p>Causal methods to evaluate conservation interventions from observational data, enabling rigorous evidence-based policy under the confounding challenges in ecological and social systems.</p></div> -->
-        <!-- <div class="research-card"><div class="research-icon">🌍</div><h3>Participatory AI &amp; data justice</h3><p>Designing AI systems that incorporate local knowledge, support contestability, and respect community rights in natural resource management and conservation decision-making.</p></div> -->
-      </div>
-    </div>
-  </section>
-  <section class="section">
-    <div class="container">
-      <div class="section-layout">
-        <div class="section-label"><h2>Partnerships</h2></div>
-        <div>
-          <p>We bridge research and practice through collaboration with NGOs, governments, and international organizations.</p>
-          <ul style="margin-top:16px;display:flex;flex-direction:column;gap:14px;">
-            <li style="display:flex;gap:14px;align-items:start;"><span style="font-size:1.4rem;flex-shrink:0;">🐘</span><div><strong><a href="https://smartconservationtools.org/" target="_blank">SMART Partnership</a></strong>, now known as SERCA<br><span style="font-size:.9rem;color:var(--text-light);">Building computational solutions for effective conservation management across protected areas worldwide.</span></div></li>
-            <li style="display:flex;gap:14px;align-items:start;"><span style="font-size:1.4rem;flex-shrink:0;">🐍</span><div><strong><a href="https://inversa.com/" target="_blank">INVERSA</a></strong><br><span style="font-size:.9rem;color:var(--text-light);">Harnessing market forces to protect threatened species by creating value from invasive animals.</span></div></li>
-            <li style="display:flex;gap:14px;align-items:start;"><span style="font-size:1.4rem;flex-shrink:0;">🐦</span><div><strong><a href="https://www.naturalstate.org/" target="_blank">Natural State</a></strong><br><span style="font-size:.9rem;color:var(--text-light);">Pioneering novel financial mechanisms, capacity building, and impact monitoring to catalyze funding for large-scale landscape restoration and conservation.</span></div></li>
-            <li style="display:flex;gap:14px;align-items:start;"><span style="font-size:1.4rem;flex-shrink:0;">🤱</span><div><strong><a href="https://armman.org/" target="_blank">ARMMAN</a></strong><br><span style="font-size:.9rem;color:var(--text-light);">Leveraging mobile health (mHealth) technology to create cost-effective, scalable, gender transformative, non-linear, systemic solutions to reduce maternal and child mortality and morbidity in India.</span></div></li>
-            <!-- <li style="display:flex;gap:14px;align-items:start;"><span style="font-size:1.4rem;flex-shrink:0;">🔬</span><div><strong><a href="https://www.eaamo.org/" target="_blank">EAAMO Research Initiative</a></strong> — Co-Director<br><span style="font-size:.9rem;color:var(--text-light);">Equity and Access in Algorithms, Mechanisms, and Optimization — connecting research to practice.</span></div></li> -->
-            <!-- <li style="display:flex;gap:14px;align-items:start;"><span style="font-size:1.4rem;flex-shrink:0;">🌐</span><div><strong><a href="https://www.naturerecovery.ox.ac.uk/" target="_blank">Leverhulme Centre for Nature Recovery</a></strong> — Oxford<br><span style="font-size:.9rem;color:var(--text-light);">Postdoctoral research on algorithmic decision-making and participation for biodiversity conservation.</span></div></li> -->
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
+  </div>
+</section>
 
 </div><!-- /page-content -->
 

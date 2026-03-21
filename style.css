@@ -579,7 +579,7 @@ ul.news-list {
 
 
 /* SPA extra */
-.pi-row { display:grid; grid-template-columns:160px 1fr; gap:32px; align-items:start; padding:24px; background:var(--white); border:1px solid var(--border); border-radius:12px; margin-bottom:28px; }
+.pi-row { max-width:800px; margin: 0 auto; display:grid; grid-template-columns:160px 1fr; gap:32px; align-items:start; padding:24px; background:var(--white); border:1px solid var(--border); border-radius:12px; margin-bottom:28px; }
 .pi-photo { width:100%; aspect-ratio:1; border-radius:10px; background:linear-gradient(135deg,var(--green-pale),var(--blue-pale)); display:flex; align-items:center; justify-content:center; font-size:3.5rem; }
 .pi-name { font-size:1.3rem; color:var(--green-dark); margin-bottom:4px; }
 .pi-role { font-size:.9rem; color:var(--blue-mid); font-weight:500; margin-bottom:10px; }
