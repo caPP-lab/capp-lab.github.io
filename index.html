@@ -23,11 +23,11 @@
       <img src="logo/logo-horizontal.png" alt="caPP Lab" />
     </a>
     <div class="nav-links" id="nav-links">
-      <a href="#" onclick="showPage('home');return false;" data-page="home">Home</a>
-      <a href="#" onclick="showPage('research');return false;" data-page="research">Research</a>
+      <a href="#" onclick="showPage('home');return false;" data-page="home" data-text="Home">Home</a>
+      <a href="#" onclick="showPage('research');return false;" data-page="research" data-text="Research">Research</a>
       <!-- <a href="#" onclick="showPage('publications');return false;" data-page="publications">Publications</a> -->
-      <a href="#" onclick="showPage('team');return false;" data-page="team">Team</a>
-      <a href="#" onclick="showPage('join');return false;" data-page="join">Join</a>
+      <a href="#" onclick="showPage('team');return false;" data-page="team" data-text="Team">Team</a>
+      <a href="#" onclick="showPage('join');return false;" data-page="join" data-text="Join">Join</a>
       <!-- <a href="#" onclick="showPage('teaching');return false;" data-page="teaching">Teaching</a> -->
       <!-- <a href="#" onclick="showPage('outreach');return false;" data-page="outreach">Outreach</a> -->
     </div>
@@ -47,10 +47,9 @@
         <img src="logo/logo.png" alt="caPP Lab — Computation and Algorithms for People and the Planet" />
       </div>
 <!--      <p class="hero-tagline">AI for decision making for planetary health</p>-->
-     <p class="hero-tagline"></p>
-      <p class="hero-desc">Advancing computation and algorithms to sustain people and the planet, with emphasis on <strong>people</strong> and the <strong>planet</strong>.
-       
-       <br /><br/>Led by Prof. Lily Xu, our research group at <strong>Columbia University</strong> develops AI methods across <strong>machine learning</strong>, <strong>optimization</strong>, and <strong>causal inference</strong> to tackle planetary health challenges, from biodiversity conservation to public health and disaster relief. Our work bridges rigorous theory with real-world deployment alongside NGOs, industry, and international organizations.
+     <!-- <p class="hero-tagline"></p> -->
+      <p class="hero-desc">Advancing computation and algorithms to sustain people and the planet, with emphasis on <strong>people</strong> and the <strong>planet</strong>.</p>
+      <p class="hero-desc">Led by <a href="https://lily-x.github.io/" target="_blank">Prof. Lily Xu</a>, our research group at <strong>Columbia University</strong> develops AI methods across <strong>machine learning</strong>, <strong>optimization</strong>, and <strong>causal inference</strong> to tackle planetary health challenges, from biodiversity conservation to public health and disaster relief. Our work bridges rigorous theory with real-world deployment in partnership with NGOs, industry, and international organizations.
       </p>
       <div class="hero-cta-row">
         <button class="hero-cta primary" onclick="showPage('research')">Our research</button>
@@ -181,11 +180,11 @@
   <section class="section">
     <div class="container">
       <div class="research-grid" style="margin-top:36px;">
-        <div class="research-card"><div class="research-icon">🐍</div><h3>Invasive species management</h3><p>Coordinating agents to effectively respond to invasive animals.</p></div>
-        <div class="research-card"><div class="research-icon">⛑️</div><h3>Disaster relief</h3><p>Equitable and robust resource allocation for sudden-onset disasters, such as earthquakes in Turkey.</p></div>
-        <div class="research-card"><div class="research-icon">🌱</div><h3>Optimal monitoring for biodiversity credits</h3><p>Efficient data collection for ecological monitoring to increase the scale and viability of biodiversity credit programs.</p></div>
-        <div class="research-card"><div class="research-icon">🦁</div><h3>Wildlife conservation</h3><p>Predictive models and patrol planning algorithms (across online learning and robust reinforcement learning) for anti-poaching to enable more effective protected area management.</p></div>
-        <div class="research-card"><div class="research-icon">🤱</div><h3>Maternal health</h3><p>Algorithms for restless multi-armed bandit problems in resource-constrained settings public health settings where limited interventions must be allocated across many beneficiaries over time.</p></div>
+        <div class="research-card"><div class="research-card-header"><div class="research-icon">🐍</div><h3>Invasive species management</h3></div><p>Coordinating agents to effectively respond to invasive animals.</p></div>
+        <div class="research-card"><div class="research-card-header"><div class="research-icon">⛑️</div><h3>Disaster relief</h3></div><p>Equitable and robust resource allocation for sudden-onset disasters, such as earthquakes in Turkey.</p></div>
+        <div class="research-card"><div class="research-card-header"><div class="research-icon">🌱</div><h3>Optimal monitoring for biodiversity credits</h3></div><p>Efficient data collection for ecological monitoring to increase the scale and viability of biodiversity credit programs.</p></div>
+        <div class="research-card"><div class="research-card-header"><div class="research-icon">🦁</div><h3>Wildlife conservation</h3></div><p>Predictive models and patrol planning algorithms (across online learning and robust reinforcement learning) for anti-poaching to enable more effective protected area management.</p></div>
+        <div class="research-card"><div class="research-card-header"><div class="research-icon">🤱</div><h3>Maternal health</h3></div><p>Algorithms for restless multi-armed bandit problems in resource-constrained settings public health settings where limited interventions must be allocated across many beneficiaries over time.</p></div>
         <!-- <div class="research-card"><div class="research-icon">🎰</div><h3>Restless bandits</h3><p>Algorithms for restless multi-armed bandit problems in resource-constrained settings — from ranger patrol planning to maternal health — where limited interventions must be allocated across many beneficiaries over time.</p></div> -->
         <!-- <div class="research-card"><div class="research-icon">🔗</div><h3>Causal Inference for Conservation</h3><p>Causal methods to evaluate conservation interventions from observational data, enabling rigorous evidence-based policy under the confounding challenges in ecological and social systems.</p></div> -->
         <!-- <div class="research-card"><div class="research-icon">🌍</div><h3>Participatory AI &amp; data justice</h3><p>Designing AI systems that incorporate local knowledge, support contestability, and respect community rights in natural resource management and conservation decision-making.</p></div> -->
@@ -337,29 +336,29 @@
       </div>
       <p class="team-section-title">Lab members</p>
       <div class="team-grid">
-        <div class="team-card"><div class="team-card-img placeholder">🔬</div><div class="team-card-body"><p class="team-card-name">Icey Siyi Ai</p><p class="team-card-role">Columbia IEOR · 1st year PhD student</p><p class="team-card-bio">Bio.</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🌱</div><div class="team-card-body"><p class="team-card-name">Anson Shyu</p><p class="team-card-role">Columbia IEOR · 1st year PhD student</p><p class="team-card-bio">Bio.</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">📊</div><div class="team-card-body"><p class="team-card-name">tahda queer</p><p class="team-card-role">Columbia IEOR · 1st year PhD student</p><p class="team-card-bio">Bio.</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">📊</div><div class="team-card-body"><p class="team-card-name"><a href="https://vihaanakshaay.github.io/" target="_blank">Vihaan Akshaay</a></p><p class="team-card-role">Advisee · Data scientist @ industry</p><p class="team-card-bio">Bio.</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">📊</div><div class="team-card-body"><p class="team-card-name"><a href="https://noahkrever.github.io/" target="_blank">Noah Krever</a></p><p class="team-card-role">Columbia CS alumni · RA</p><p class="team-card-bio">Bio.</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">📊</div><div class="team-card-body"><p class="team-card-name">Luveen Wadhwani</p><p class="team-card-role">Columbia E3B · 1st year MS</p><p class="team-card-bio">Bio.</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">📊</div><div class="team-card-body"><p class="team-card-name">Donovan Barcelona</p><p class="team-card-role">Columbia IEOR · Undergrad</p><p class="team-card-bio">Bio.</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">📊</div><div class="team-card-body"><p class="team-card-name">Hannah Park</p><p class="team-card-role">UChicago CS · Undergrad</p><p class="team-card-bio">Bio.</p></div></div>
+        <div class="team-card"><div class="team-card-img placeholder">🐒</div><div class="team-card-body"><p class="team-card-name">Icey Siyi Ai</p><p class="team-card-role">Columbia IEOR · 1st year PhD student</p><p class="team-card-bio">Bio.</p></div></div>
+        <div class="team-card"><div class="team-card-img placeholder">🦒</div><div class="team-card-body"><p class="team-card-name">Anson Shyu</p><p class="team-card-role">Columbia IEOR · 1st year PhD student</p><p class="team-card-bio">Bio.</p></div></div>
+        <div class="team-card"><div class="team-card-img placeholder">🐈</div><div class="team-card-body"><p class="team-card-name">tahda queer</p><p class="team-card-role">Columbia IEOR · 1st year PhD student</p><p class="team-card-bio">Bio.</p></div></div>
+        <div class="team-card"><div class="team-card-img placeholder">🦋</div><div class="team-card-body"><p class="team-card-name"><a href="https://vihaanakshaay.github.io/" target="_blank">Vihaan Akshaay</a></p><p class="team-card-role">Data scientist @ industry · Advisee</p><p class="team-card-bio">Bio.</p></div></div>
+        <div class="team-card"><div class="team-card-img placeholder">🦁</div><div class="team-card-body"><p class="team-card-name"><a href="https://noahkrever.github.io/" target="_blank">Noah Krever</a></p><p class="team-card-role">Columbia CS alumni · RA</p><p class="team-card-bio">Bio.</p></div></div>
+        <div class="team-card"><div class="team-card-img placeholder">🐆</div><div class="team-card-body"><p class="team-card-name">Luveen Wadhwani</p><p class="team-card-role">Columbia E3B · 1st year MS</p><p class="team-card-bio">Bio.</p></div></div>
+        <div class="team-card"><div class="team-card-img placeholder">🦉</div><div class="team-card-body"><p class="team-card-name">Donovan Barcelona</p><p class="team-card-role">Columbia IEOR · Undergrad</p><p class="team-card-bio">Bio.</p></div></div>
+        <div class="team-card"><div class="team-card-img placeholder">🦩</div><div class="team-card-body"><p class="team-card-name">Hannah Park</p><p class="team-card-role">UChicago CS · Undergrad</p><p class="team-card-bio">Bio.</p></div></div>
       </div>
       <p class="team-section-title" style="margin-top:48px;">Alumni</p>
       <div class="team-grid">
         <div class="team-card"><div class="team-card-img placeholder">🎓</div><div class="team-card-body"><p class="team-card-name">Rachel Guo</p><p class="team-card-role">Harvard CS/stats · undergrad '22</p><p class="team-card-bio">Thesis '22, now PhD student @ Stanford ICME</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🏛️</div><div class="team-card-body"><p class="team-card-name">Emilia Cabrera</p><p class="team-card-role">Harvard CS · undergrad '21</p><p class="team-card-bio">Thesis '21, now Duolingo</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🐘</div><div class="team-card-body"><p class="team-card-name">Ezenia Diaz-Lembert</p><p class="team-card-role">Harvard CS · undergrad '23</p><p class="team-card-bio">x</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🐘</div><div class="team-card-body"><p class="team-card-name">April Chen</p><p class="team-card-role">Harvard CS/gov · undergrad '22</p><p class="team-card-bio">Now OpenAI</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🐘</div><div class="team-card-body"><p class="team-card-name">Christopher Ong</p><p class="team-card-role">Harvard CS/econ · undergrad '23</p><p class="team-card-bio"></p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🐘</div><div class="team-card-body"><p class="team-card-name">Alejandra Perea Rojas</p><p class="team-card-role">Harvard CS · undergrad '24</p><p class="team-card-bio"></p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🐘</div><div class="team-card-body"><p class="team-card-name">Vincent Börsch-Supan</p><p class="team-card-role">Harvard CS/math · undergrad '25</p><p class="team-card-bio">Now data scientist @ QuantCo</p></div></div>
-        <div class="team-card"><div class="team-card-img placeholder">🐘</div><div class="team-card-body"><p class="team-card-name">Kyran Flynn</p><p class="team-card-role">Columbia IEOR · MS '25</p><p class="team-card-bio"></p></div></div>
+        <div class="team-card"><div class="team-card-img placeholder">🎓</div><div class="team-card-body"><p class="team-card-name">Emilia Cabrera</p><p class="team-card-role">Harvard CS · undergrad '21</p><p class="team-card-bio">Thesis '21, now Duolingo</p></div></div>
+        <div class="team-card"><div class="team-card-img placeholder">🎓</div><div class="team-card-body"><p class="team-card-name">Ezenia Diaz-Lembert</p><p class="team-card-role">Harvard CS · undergrad '23</p><p class="team-card-bio">x</p></div></div>
+        <div class="team-card"><div class="team-card-img placeholder">🎓</div><div class="team-card-body"><p class="team-card-name">April Chen</p><p class="team-card-role">Harvard CS/gov · undergrad '22</p><p class="team-card-bio">Now OpenAI</p></div></div>
+        <div class="team-card"><div class="team-card-img placeholder">🎓</div><div class="team-card-body"><p class="team-card-name">Christopher Ong</p><p class="team-card-role">Harvard CS/econ · undergrad '23</p><p class="team-card-bio"></p></div></div>
+        <div class="team-card"><div class="team-card-img placeholder">🎓</div><div class="team-card-body"><p class="team-card-name">Alejandra Perea Rojas</p><p class="team-card-role">Harvard CS · undergrad '24</p><p class="team-card-bio"></p></div></div>
+        <div class="team-card"><div class="team-card-img placeholder">🎓</div><div class="team-card-body"><p class="team-card-name">Vincent Börsch-Supan</p><p class="team-card-role">Harvard CS/math · undergrad '25</p><p class="team-card-bio">Now data scientist @ QuantCo</p></div></div>
+        <div class="team-card"><div class="team-card-img placeholder">🎓</div><div class="team-card-body"><p class="team-card-name">Kyran Flynn</p><p class="team-card-role">Columbia IEOR · MS '25</p><p class="team-card-bio"></p></div></div>
       </div>
       <div class="highlight-box" style="margin-top:48px;">
         <strong>Interested in joining the lab?</strong><br>
-        Express interest in the Join tab, above.
+        Tell us about your background and interest in the Join tab, linked above.
       </div>
     </div>
   </section>
