@@ -1,0 +1,25 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Spotlight
+.Spotlight-V100
+.Trashes
+
+# Node
+node_modules/
+npm-debug.log
+
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
